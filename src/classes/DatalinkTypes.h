@@ -7,12 +7,10 @@
 
 class Datalink {
     public:
-        enum class RocketState {
+        enum class State {
             IDLE,
-            ARMED,
-            LAUNCH,
-            DESCENT,
-            LANDED
+            ACTIVE,
+            ERROR
         };
 
         
