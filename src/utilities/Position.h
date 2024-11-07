@@ -4,26 +4,13 @@
 
 class Position {
     public:
-        Position(double latitude, double longitude, double altitude) {
+        Position(float latitude, float longitude, float altitude) {
             this->latitude = latitude;
             this->longitude = longitude;
             this->altitude = altitude;
         }
 
-        double getLatitude() {
-            return latitude;
-        }
-
-        double getLongitude(){
-            return longitude;
-        }
-
-        double getAltitude(){
-            return altitude;
-        }
-    
-    private:
-        double latitude;
-        double longitude;
-        double altitude;
+        float latitude;
+        float longitude;
+        float altitude;
 };

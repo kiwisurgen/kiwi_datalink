@@ -65,9 +65,12 @@ cmake --build "$BUILD_DIR"
 
 # Copy the executable to the app directory
 cp "$BUILD_DIR/datalink" "$APP_DIR"
+cp -r "$ROOT_DIR/src/resources" "$APP_DIR"
 
 # Notify the user
 echo "Build complete. Executable is located in $APP_DIR."
+
+cd $APP_DIR
 
 # Check if '--run' flag is passed and run the executable if it is
 if [ "$RUN_EXECUTABLE" = true ]; then
