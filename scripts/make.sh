@@ -65,6 +65,7 @@ cmake --build "$BUILD_DIR"
 
 # Copy the executable to the app directory
 cp "$BUILD_DIR/datalink" "$APP_DIR"
+cp "$BUILD_DIR/sim/airplaneSim" "$APP_DIR"
 cp -r "$ROOT_DIR/src/resources" "$APP_DIR"
 
 # Notify the user
